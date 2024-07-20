@@ -10,6 +10,9 @@
       href="./assets/images/logo/favicon.ico"
       type="image/x-icon"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <!--! css link -->
     <link rel="stylesheet" href="./css/style.css" />
     <!--todo tailwind cdn link -->
@@ -18,6 +21,9 @@
       tailwind.config = {
         theme: {
           extend: {
+            fontFamily: {
+              sans: ["Inter", "sans-serif"], // Add Inter to the sans font family
+            },
             colors: {
               clifford: "#da373d",
             },
@@ -28,11 +34,12 @@
 
     <title>Blue Logoon</title>
   </head>
-  <body class="">
-    <nav class="bg-white p-4">
+  <body class="font-sans"> <nav class="bg-white p-4">
       <div class="container mx-auto flex justify-between items-center">
         <button class="text-blue-400 md:hidden">&#127760; English</button>
-        <img src="./assets//Blau 1.png" class="h-10 w-20 obect-cover" />
+        <div class="flex items-center mr-10">
+          <img src="./assets//Blau 1.png" class="h-10 w-20 obect-cover" alt="logo"/>
+        </div>
         <div class="md:hidden">
           <button id="menu-btn" class="text-blue-400 focus:outline-none">
             <svg
@@ -149,8 +156,8 @@
         <div
           class="flex mt-10 gap-5 items-center justify-center"
         >
-          <img src="./assets/apple.png" class="h5 w-5" />
-          <img src="./assets/android-2.png" class="h5 w-5" />
+          <img src="./assets/apple.png" class="h10 w-10" />
+          <img src="./assets/android-2.png" class="h10 w-10" />
         </div>
       </div>
     </section>
